@@ -12,5 +12,5 @@ new_json_student = json.dumps(student)
 with open("student.json","w") as file:
 	file.write(new_json_student)
 
-
+print("The Code Works")
 
