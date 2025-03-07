@@ -1,0 +1,16 @@
+import json
+
+with open("student.json","r") as file:
+	json_str = file.read()
+
+student = json.loads(json_str)
+
+student["name"] = "Niko"
+
+new_json_student = json.dumps(student)
+
+with open("student.json","w") as file:
+	file.write(new_json_student)
+
+
+
